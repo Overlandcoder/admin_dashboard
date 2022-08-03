@@ -5,24 +5,28 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 6fr;
   height: 100vh;
 }
 
 .sidebar {
+  background-color: rgb(41, 162, 232);
+}
+
+.sidebar-grid {
   display: grid;
-  gap: 30px;
-  padding: 25px;
-  background-color: rgb(59, 174, 240);
+  gap: 60px;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
+  grid-row: 1 / 2;
+  align-self: start;
 }
 
 .heading .icon {
   width: 40px;
-  height: 40px;
-  top: 10px;
+  height: 43px;
+  top: 12px;
   padding-right: 10px;
 }
 
@@ -38,8 +42,17 @@ li {
 
 .icon {
   position: relative;
-  top: 3px;
+  top: 4px;
   padding-right: 20px;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+.top-links,
+.bottom-links {
+  padding-left: 25px;
+}
+
+.heading {
+  padding: 25px 0 0 15px;
 }
