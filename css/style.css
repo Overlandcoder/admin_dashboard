@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+input {
+  all: unset;
+}
+
+button {
+  all: unset
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -23,7 +31,7 @@
   align-self: start;
 }
 
-.heading .icon {
+.nav-heading .icon {
   width: 40px;
   height: 43px;
   top: 12px;
@@ -53,6 +61,109 @@ li {
   padding-left: 25px;
 }
 
-.heading {
+.nav-heading {
   padding: 25px 0 0 15px;
+}
+
+.search img { 
+  max-width: 22px;
+  position: relative;
+}
+
+.header-top-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 40px 150px 0 60px;
+}
+
+.search {
+  display: flex;
+  gap: 15px;
+}
+
+.search input[type="search"] {
+  border-radius: 20px;
+  width: 700px;
+  background-color: rgb(237, 237, 237);
+  border: none;
+  height: 5px;
+  padding: 15px;
+}
+
+.search input:focus {
+  border: none;
+  box-shadow: 1px 1px 5px rgb(189, 189, 189);
+}
+
+.top-row-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.bell {
+  max-width: 22px;
+}
+
+.top-row-right .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.top-row-right p {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.header-bottom-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 130px 0 60px;
+}
+
+.bottom-row-left {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 400px;
+  align-items: center;
+}
+
+.bottom-row-left .profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(41, 162, 232);
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bottom-row-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  border-style: none;
+}
+
+.greeting {
+  display: grid;
+  gap: 3px;
+}
+
+.name { 
+  font-size: 22px;
+  font-weight: bold;
 }
