@@ -176,6 +176,10 @@ button:hover {
   gap: 3px;
 }
 
+.greeting p {
+  font-weight: bold;
+}
+
 .name { 
   font-size: 22px;
   font-weight: bold;
@@ -198,21 +202,31 @@ a {
 }
 
 .projects-grid {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 85%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
-.projects-grid div {
+.projects-grid > div {
   background-color: #fff;
   padding: 30px;
   border-radius: 8px;
   border-left: 8px solid rgb(245, 214, 34);
 }
 
+.projects-grid h3 {
+  padding-bottom: 10px;
+}
+
 .main-page {
   height: 100vh;
   box-sizing: border-box;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
 }
